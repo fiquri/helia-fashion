@@ -1,0 +1,73 @@
+.hl-bg{
+	position: absolute;
+}
+.hl-img{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.hl-img--masonry{
+    object-fit: inherit!important;
+}
+.hl-img-primary-journal{
+	width: 77%;
+	height: $img-height-primary-journal;
+}
+.hl-img-secondary-journal{
+	height: $img-height-secondary-journal;
+}
+.hl-img--cover{
+    width: 100%;
+}
+.hl-masonry-portfolio__banner img{
+    @extend .hl-img;
+}
+.hl-separator__img{
+    width: 100%;
+}
+.hl-media-object{
+    width: 114px;
+}
+.hl-insta img{
+    width: 100%; 
+}
+.hl-thumbnail{
+    div[class^="col"]{
+        margin-bottom: 25px;
+    }
+    div[class^="col"]:last-child{
+        margin-bottom: 0px;
+    }
+}
+.hl-background-square{
+    position: relative;
+    width: 100%;
+    img{
+        padding: 20px;
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        z-index: -1;
+    }
+}
+.hl-background-square--right{
+    &:after{
+        top: 0;
+        right: 0;
+    }
+}
+.hl-background-square--left{
+    &:after{
+        top: 0;
+        left: 0;
+    }
+}
+.hl-portfolio3-slide img{
+    height: 518px;
+}
+.hl-portfolio5-slide img{
+    height: 540px;
+}

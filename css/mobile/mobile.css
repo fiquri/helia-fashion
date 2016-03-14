@@ -1,0 +1,409 @@
+/*-------------------------------------------------------*/
+/* Table of Contents   */
+/*-------------------------------------------------------*/
+/*
+1.  Media query for small mobile 320px
+2.  Media query for large mobile 360px
+3.  Media query for tablet default
+4.  Media query for tablet landscape
+*/
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  /*-------------------------------------------------------*/
+  /* Base styles   */
+  /*-------------------------------------------------------*/
+  html {
+    font-size: 50%; }
+
+  .container {
+    width: auto;
+    padding: 0 18px; }
+
+  .row {
+    margin: 0 -18px;
+    position: relative; }
+
+  *[class^="col"] {
+    padding: 0 18px; }
+
+  section, .hl-section, .hl-article {
+    margin-bottom: 60px; }
+
+  .hl-flex-center {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column; }
+
+  .hl-img {
+    object-position: top center; }
+
+  .hl-img--responsive {
+    object-fit: inherit; }
+
+  .e {
+    position: static; }
+
+  .k {
+    position: static;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%); }
+
+  .l {
+    background: white;
+    padding: 40px;
+    margin-left: 0px; }
+
+  /*-------------------------------------------------------*/
+  /* text styles   */
+  /*-------------------------------------------------------*/
+  h1, h1.hl-hero-h1 {
+    font-size: 30px;
+    line-height: 40px; }
+
+  h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 40px; }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px; }
+
+  p:first-child {
+    margin-bottom: 30px; }
+
+  p.hl-label-sm {
+    letter-spacing: 0;
+    font-size: 14px;
+    margin-bottom: 15px; }
+
+  p.hl-paragraft-banner {
+    margin-bottom: 40px; }
+
+  .hl-banner-journal p {
+    font-size: 12px; }
+
+  .hl-heading-primary-journal {
+    font-size: 24px;
+    line-height: 34px;
+    position: static;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+
+  .hl-return a {
+    width: 50%;
+    font-size: 14px !important; }
+
+  .hl-post-article ul {
+    font-size: 14px; }
+
+  .hl-post-article ul li:before {
+    font-size: 10px; }
+
+  /*-------------------------------------------------------*/
+  /* masonry styles   */
+  /*-------------------------------------------------------*/
+  .hl-porfolio1 .masonry {
+    margin: 0 18px; }
+  .hl-porfolio1 .stamp {
+    height: 530px; }
+  .hl-porfolio1 .masonry-item {
+    width: 100%;
+    max-width: 100%; }
+  .hl-porfolio1 .masonry-item3 {
+    bottom: auto; }
+  .hl-porfolio1 .hl-masonry-action {
+    bottom: auto;
+    right: auto;
+    min-height: 100px;
+    height: auto;
+    padding-top: 30px; }
+  .hl-porfolio1 .hl-masonry-portfolio {
+    padding-top: 0;
+    padding-left: 0; }
+  .hl-porfolio1 .hl-masonry-portfolio__heading {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 35px; }
+    .hl-porfolio1 .hl-masonry-portfolio__heading p {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase; }
+  .hl-porfolio1 .hl-masonry-action__desc {
+    padding-bottom: 0; }
+  .hl-porfolio1 .hl-masonry-portfolio__banner {
+    width: 100%;
+    height: auto; }
+  .hl-porfolio1 .masonry img {
+    object-position: inherit; }
+  .hl-porfolio1 .hl-img--masonry {
+    object-fit: none; }
+
+  /*-------------------------------------------------------*/
+  /* masonry styles   */
+  /*-------------------------------------------------------*/
+  .picture-item {
+    margin-bottom: 20px; }
+    .picture-item:last-child {
+      margin-bottom: 0; }
+
+  /*-------------------------------------------------------*/
+  /* flexider styles   */
+  /*-------------------------------------------------------*/
+  .flex-caption__quote {
+    top: 40%;
+    padding: 0px 10px; }
+
+  .flex-caption-title {
+    position: static;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+    text-align: center; }
+    .flex-caption-title h3 {
+      position: relative;
+      top: 60px; }
+
+  .flex-direction-nav {
+    display: none; }
+
+  .flex-control-paging {
+    display: hidden; }
+
+  /*-------------------------------------------------------*/
+  /* button styles   */
+  /*-------------------------------------------------------*/
+  .hl-hero__btn {
+    font-size: 12px; }
+
+  /*-------------------------------------------------------*/
+  /* wrapper styles   */
+  /*-------------------------------------------------------*/
+  .hl-hero__wrapper {
+    padding-bottom: 30px; }
+
+  .hl-hero__content p, .stamp {
+    width: 100%;
+    min-height: 10px; }
+
+  .hl-about__heading, .hl-hero-h1 {
+    margin-bottom: 30px; }
+
+  .hl-hero__heading {
+    width: 100%; }
+
+  .hl-wrapper-article, .hl-box, .hl-masonry-action__desc, .hl-masonry-action, .hl-jurnal--thumbnail--post {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .hl-wrapper-article {
+    padding-bottom: 0px; }
+
+  .hl-about__heading {
+    text-align: left;
+    padding-top: 0; }
+
+  .hl-about .hl-li--social-media {
+    margin-bottom: 0; }
+
+  .hl-counter .hl-box-bordered {
+    margin: 0 30px 25px;
+    width: auto; }
+
+  .hl-counter div[class^="col"]:last-child .hl-box-bordered {
+    margin: 0 30px; }
+
+  .hl-article-thumbnail-big {
+    margin-bottom: 25px; }
+
+  .hl-article-thumbnail-big img {
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: none;
+    object-position: top left; }
+
+  .hl-paragraft-primary-journal {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  .hl-jurnal--thumbnail--post {
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 15px; }
+
+  .hl-journal div[class^="col"]:last-child .hl-jurnal--thumbnail--post {
+    margin-bottom: 0; }
+
+  .hl-service div[class^="col"] {
+    margin-bottom: 20px; }
+
+  .hl-img-primary-journal {
+    height: 170px; }
+
+  p.hl-label-md {
+    margin-bottom: 0; }
+
+  .hl-thumbnail img {
+    width: 100%; }
+
+  .hl-insta__intro {
+    width: 100%;
+    padding: 0 18px;
+    margin: 0; }
+
+  .hl-thumbnail div[class^="col"] {
+    margin-bottom: 25px; }
+  .hl-thumbnail div[class^="col"]:last-child {
+    margin-bottom: 0px; }
+
+  .hl-contact--aside {
+    padding-top: 0px; }
+
+  .hl-separator-banner__img {
+    object-fit: none;
+    object-position: left top; }
+
+  .hl-journal-post, .hl-comment-post, .hl-input-comment-post {
+    width: 100%; }
+
+  .hl-post-social {
+    margin-bottom: 30px; }
+
+  .hl-media-object {
+    width: 58px; }
+
+  .hl-comment--body {
+    width: 100%; }
+
+  .hl-comment-heading {
+    margin-bottom: 25px; }
+
+  .hl-comment-box .hl-comment-box {
+    margin-left: 30px; }
+
+  .hl-portfolio-box2 {
+    width: 100%; }
+
+  .hl-tag--line {
+    margin-bottom: 30px; }
+
+  .hl-portfolio-article__item {
+    margin-bottom: 60px; }
+
+  /*-------------------------------------------------------*/
+  /* header styles   */
+  /*-------------------------------------------------------*/
+  header {
+    height: 85px; }
+
+  .hl-logo {
+    width: 68px;
+    height: 73px; }
+
+  .hl-wr-logo {
+    width: 85px;
+    height: 85px; }
+
+  .hl-wr-logo__img {
+    max-width: 65px; }
+
+  .hl-logo__img {
+    padding: 10px; }
+
+  .hl-menu-icon {
+    left: calc(100% - 68px); }
+
+  .hl-menu-icon {
+    top: 15px; }
+
+  /*-------------------------------------------------------*/
+  /* nav styles   */
+  /*-------------------------------------------------------*/
+  nav {
+    width: calc(100% - 68px);
+    overflow-y: auto;
+    overflow-x: hidden; }
+
+  .hl-menu-icon.hl-menu-icon--move {
+    left: 0;
+    top: 0;
+    margin-left: -5px;
+    height: 73px;
+    background: url("../img/common/close-hover-out.png"), black;
+    background-position: -320px 50%; }
+
+  /*-------------------------------------------------------*/
+  /* footer styles   */
+  /*-------------------------------------------------------*/
+  footer {
+    padding: 40px 0; }
+
+  .hl-footer-box {
+    margin: 0;
+    width: 100%; }
+
+  .hl-footer__social {
+    text-align: left;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column; }
+    .hl-footer__social li {
+      margin-bottom: 5px; }
+      .hl-footer__social li:last-child {
+        margin-bottom: 0; } }
+@media only screen and (min-width: 360px) and (max-width: 787px) {
+  /*-------------------------------------------------------*/
+  /* custom large mobile styles   */
+  /*-------------------------------------------------------*/
+  .stamp {
+    height: 600px; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*-------------------------------------------------------*/
+  /* custom tablet styles   */
+  /*-------------------------------------------------------*/
+  .masonry {
+    overflow-x: hidden; }
+
+  .flex-direction-nav {
+    display: none; }
+
+  .hl-jurnal--thumbnail--post h5 {
+    max-height: 68px;
+    overflow: hidden; }
+
+  .container {
+    width: auto; }
+
+  .hl-goto-top {
+    right: 0; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /*-------------------------------------------------------*/
+  /* custom tablet landscape styles   */
+  /*-------------------------------------------------------*/
+  .container {
+    width: 995px; } }
+
+/*# sourceMappingURL=mobile.css.map */

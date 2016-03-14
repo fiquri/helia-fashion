@@ -1,0 +1,10 @@
+.hl-journal__headline{
+	margin-bottom: 50px;
+}
+.hl-jurnal--thumbnail{
+	div[class^="col"]{
+		&:nth-child(n+4){
+			margin-top: 50px;
+		}
+	}
+}

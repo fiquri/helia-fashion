@@ -1,0 +1,108 @@
+$font-regular: 400 ;
+$font-black: 700 ;
+$font-bold: 900 ;
+
+//color
+$text-default-color: #241f22;
+$text-invert-color: #faf4f8;
+$text-small-color: #c1b6bd;
+$bg-btn-load : #cdcdcd;
+$input-border-color: #f0e7ed;
+$bg-color-default : #fff;
+$bg-color-invert : $text-default-color;
+$link-default-color: #0699a4;
+$border : $text-default-color;
+$bg-overlay-color: $link-default-color;
+$icon-color: $link-default-color;
+$title-small-color : $bg-btn-load;
+
+//font
+$font-size-default: 14px;
+$font-size-medium : 24px;
+$font-size-sm : 18px;
+$h1: 90px;
+$h2: 48px;
+$h3: 36px;
+$h4: 30px;
+$h5: 24px;
+$h6: 18px;
+$h1-line-height: $h1 - 10px;
+$h2-line-height: $h2 + 10px;
+$h3-line-height: $h3 + 10px;
+$h4-line-height: $h4 + 10px;
+$h5-line-height: $h5 + 10px;
+$h6-line-height: $h6 + 10px;
+$h3-margin-bottom : 55px;
+$h5-margin-bottom : 35px;
+
+//p
+$p-size-default : 18px;
+$p-size-small : 14px;
+$p-line-default : $p-size-default + 10px;
+$p-margin-btm : 35px;
+
+//nav
+$nav-width : 264px;
+
+//container
+$container-lg-width : 1195px;
+$container-md-width : 1020px;
+$container-padding : 12.5px;
+$container-md-padding : 0 $container-padding;
+$container-margin : 0px (-$container-padding);
+
+//article
+$article-padding : 30px;
+$article-padding-thumbnail : 25px;
+
+//img
+$img-height-primary-journal : 307px;
+$img-height-secondary-journal : 170px;
+
+
+//mobile-----
+
+
+//container mobile
+$container-tablet-landscape: 995px;
+$container-mobile-padding : 18px;
+$container-mobile-row : (-$container-mobile-padding);
+$section-margin-btm : 120px;
+$margin-bottom-mobile : 60px;
+$heading-margin-bottom-mobile : 30px;
+
+//font mobile
+$font-mobile-size-default : 14px;
+$font-mobile-size-large : 24px;
+$font-mobile-line-height-default : $font-mobile-size-default + 10px;
+$font-mobile-line-height-large : $font-mobile-size-large + 10px;
+$font-mobile-size-sm : 12px;
+$font-mobile-size-very-sm : 10px;
+$h1-mobile: 30px;
+$h1-mobile-line-height: $h1-mobile + 5px;
+$h3-mobile: 30px;
+$h1-mobile-line-height: $h3-mobile + 10px;
+
+//nav mobile
+$nav-mobile-width : calc(100% - 68px);
+
+//p mobile
+$p-mobile-size-default : $font-mobile-size-default;
+$p-size-small : 14px;
+$p-mobile-line-default : $p-mobile-size-default + 10px;
+$p-mobile-margin-btm : 30px;
+
+//header mobile
+$header-mobile-height: 85px;
+$logo-mobile-width:68px;
+$logo-mobile-height: 73px;
+$logo-mobile-wrapper : 85px;
+$icon-mobile-left:calc(100% - 68px);
+$icon-mobile-top:15px;
+
+//masonry mobile
+$stamp-small-mobile : 530px;
+$stamp-large-mobile : 600px;
+
+//article thumbnail mobile
+$thumbnail-mobile-max-height : 68px

@@ -1,0 +1,107 @@
+.hl-search {
+    width: 90%;
+    height: 60px;
+    padding: 0;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 50px;
+}
+.hl-search input[type="search"] {
+    width: 100%;
+    outline: 0;
+    padding: 10px 15px 10px 15px;
+    height: auto;
+    border: 0;
+    border-left: 1px solid #ebebeb;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "merriweather";
+}
+.hl-input{
+	margin-bottom: 30px;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	font-family: "Lato";
+	input, textarea{
+		padding: 20px 25px;
+		width: 100%;
+		border-width: 1px;
+		border-style: solid;
+		outline: 0;
+		@include transition(border-color 0.25s ease-in);
+	}
+}
+.hl-input__field--textarea{
+	height: 180px;
+	resize: none;
+}
+.hl-input__field {
+	position: relative;
+	display: block;
+	float: right;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.hl-input__field:focus {
+	outline: none;
+}
+
+.hl-input__label-content {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0.25em 0;
+	@include transition(transform 0.25s ease-in-out);
+}
+
+
+.hl-input__label-content::after {
+	content: attr(data-content);
+	position: absolute;
+	font-weight: 800;
+	bottom: 100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding: 0.25em 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.85em;
+}
+.hl-input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 25px;
+	font-size: 70.25%;
+	width: 100%;
+	margin: 0;
+    font-size: $font-size-default;
+    font-weight: $font-regular;
+	text-align: left;
+	position: absolute;
+	bottom: 100%;
+	pointer-events: none;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	@include all(user-select, none);
+	@include transform(translate3d(0, 3em, 0));
+	@include transition(transform 0.25s ease-in-out) ;
+}
+
+.hl-input__field:focus + .hl-input__label,
+.hl-input--filled + .hl-input__label {
+	@include transform(translate3d(0, 0, 0));
+}
+
+.hl-input__field:focus + .hl-input__label .hl-input__label-content,
+.hl-input--filled + .hl-input__label .hl-input__label-content{
+	@include transform(translate3d(0, 100%, 0));
+}

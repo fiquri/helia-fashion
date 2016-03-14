@@ -1,0 +1,33 @@
+a:focus{
+	outline: 0;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-family: "merriweather";
+    font-weight: $font-black;
+}
+
+.hl-img-overlay__link{
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	font-size: $font-size-sm;
+}
+.hl-return a{
+}
+.hl-hire{
+	margin-top: -$p-margin-btm;
+}
+.hl-slide-arrow{
+	position: absolute;
+	bottom: -10px;
+	width: auto;
+	a{
+	}
+	#cycle-next{
+		margin-left: 20px;
+	}
+}

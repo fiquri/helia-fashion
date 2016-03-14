@@ -1,0 +1,93 @@
+a {
+  color: #0699a4; }
+  a:hover, a:focus {
+    -webkit-transition: color, 0.3s ease-in;
+    -moz-transition: color, 0.3s ease-in;
+    -ms-transition: color, 0.3s ease-in;
+    -o-transition: color, 0.3s ease-in;
+    transition: color, 0.3s ease-in; }
+
+.hl-color--default, a:hover, a:focus {
+  color: #241f22; }
+
+.hl-color--white {
+  color: #faf4f8; }
+  .hl-color--white a {
+    color: #faf4f8; }
+
+.hl-color--blue, .hl-input__label-content::after {
+  color: #0699a4; }
+
+.hl-color--gray {
+  color: #cdcdcd; }
+
+.hl-color--pink {
+  color: #faf4f8; }
+
+/*Short Codes*/
+.hl-input__field {
+  border-color: #f0e7ed; }
+
+/*//*/
+.hl-bg--default {
+  background-color: #fff; }
+
+.hl-bg--transparent {
+  background-color: transparent;
+  border-color: #fff; }
+
+.hl-bg--black {
+  background-color: #241f22; }
+
+.hl-bg--pink {
+  background-color: #faf4f8; }
+
+.hl-bg--green {
+  background-color: #0699a4; }
+
+.hl-bg--blue, .hl-background-square:after, #custom-pager li.cycle-pager-active a {
+  background-color: #0699a4; }
+
+.hl-bg--gray {
+  background-color: #cdcdcd; }
+
+.hl-curve {
+  border-radius: 1000px;
+  border-width: 5px;
+  border-style: solid; }
+
+.hl-img--top-left, .hl-img--left-top,
+.hl-img--top-right, .hl-img--right-top,
+.hl-img--btm-left, .hl-img--left-btm,
+.hl-img--btm-right, .hl-img--right-btm,
+.hl-img--center-left, .hl-img--left-center,
+.hl-img--center-right, .hl-img--right-center,
+.hl-img--center-top, .hl-img--top-center,
+.hl-img--center-btm, .hl-img--btm-center, .hl-img {
+  object-fit: none; }
+
+.hl-img--top-left, .hl-img--left-top {
+  object-position: top left; }
+
+.hl-img--top-right, .hl-img--right-top {
+  object-position: top right; }
+
+.hl-img--btm-left, .hl-img--left-btm {
+  object-position: bottom left; }
+
+.hl-img--btm-right, .hl-img--right-btm {
+  object-position: bottom right; }
+
+.hl-img--center-left, .hl-img--left-center {
+  object-position: center left; }
+
+.hl-img--center-right, .hl-img--right-center {
+  object-position: center right; }
+
+.hl-img--center-top, .hl-img--top-center, .hl-img {
+  object-position: center top; }
+
+.hl-img--center-btm, .hl-img--btm-center {
+  object-position: center bottom; }
+
+/*# sourceMappingURL=default-theme.css.map */

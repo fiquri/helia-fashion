@@ -1,0 +1,197 @@
+// For rem
+// usage @include rem(font-size,12px);
+
+$baseFontSize: 10; // Based on HTML reset html { font-size: 62.5%; }
+ 
+@function parseInt($n) {
+  @return $n / ($n * 0 + 1);
+}
+ 
+@mixin rem($property, $values) {
+	$px : (); 
+	$rem: ();
+	
+	$root: $baseFontSize;
+	
+	@each $value in $values {
+		@if $value == 0 or $value == auto {
+			$px : append($px , $value);
+			$rem: append($rem, $value);
+		}
+		
+		@else if type-of($value) == number { 
+			$unit: unit($value);
+			$val: parseInt($value);
+			
+			@if $unit == "px" {
+				$px : append($px,  $value);
+				$rem: append($rem, ($val / $root + rem));
+			}
+			
+			@if $unit == "rem" {
+				$px : append($px,  ($val * $root + px));
+				$rem: append($rem, $value);
+			}
+		}
+		
+		@else {
+			$px : append($px,  $value);
+			$rem: append($rem, $value);
+		}
+	}
+	
+	@if $px == $rem {
+		#{$property}: $px;
+	} @else {
+		#{$property}: $px;
+		#{$property}: $rem;
+	} 
+}
+ 
+@function rem($value) {
+	$root: $baseFontSize;
+	$val: parseInt($value);
+	$return: ();
+	
+	@if unit($value) == "px" {
+		$return: append($return, ($val / $root + rem));
+	} @else {
+		$return: append($return, ($val * $root + px));
+	}
+	
+	@return $return;
+}
+
+// break point
+// usage 
+
+// .sidebar {
+//   width: 60%;
+//   float: left;
+//   margin: 0 2% 0 0;
+//   @include bp-small { <<<<<
+//     width: 100%;
+//     float: none;
+//     margin: 0;
+//   }
+// }
+
+@mixin bp-large {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (min-width: 481px) and (max-width: 768px)  {
+    @content;
+  }
+}
+@mixin bp-small-medium {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin bp-small {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+// for Animation
+// usage
+
+// @include keyframes(slide-down) { <<<<<<
+//   0% { opacity: 1; }
+//   90% { opacity: 0; }
+// }
+
+// .element {
+//   width: 100px;
+//   height: 100px;
+//   background: black;
+//   @include animation('slide-down 5s 3'); <<<<<<
+// }
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes  #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes  #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+// for transition
+// usage
+
+// a {
+//   color: gray;
+//   @include transition(color .3s ease); <<<<<<
+//   &:hover {
+//     color: black;
+//   }
+// }
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+@mixin transform($args...){
+	-webkit-transform: $args;
+	   -moz-transform: $args;
+	    -ms-transform: $args;
+	     -o-transform: $args;
+	        transform: $args;
+}
+
+@mixin display($args...){
+	display:-webkit-#{$args};
+	display:    -moz-#{$args};
+	display:     -ms-#{$args};
+	display:      -o-#{$args};
+	display:         #{$args};
+}
+@mixin all-attribut($attribut, $args...){
+	#{$attribut}:-webkit-#{$args};
+	#{$attribut}:    -moz-#{$args};
+	#{$attribut}:     -ms-#{$args};
+	#{$attribut}:      -o-#{$args};
+	#{$attribut}:         #{$args};
+}
+@mixin all($all-name, $args...){
+	-webkit-#{$all-name}: $args;
+	   -moz-#{$all-name}: $args;
+	    -ms-#{$all-name}: $args;
+	     -o-#{$all-name}: $args;
+	        #{$all-name}: $args;
+}
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}

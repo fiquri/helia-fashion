@@ -1,0 +1,35 @@
+.flexslider, .flex-viewport, .slides, .slides li{
+    height: 100%;
+}
+.flexslider{
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+.flex-caption {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    height: 100%;
+}
+.flex-caption__quote{
+    position: absolute;
+    top: 50%;
+    @include all-attribut(padding-left, calc(3.3/12*100%));
+    @include all-attribut(padding-right, calc(3.3/12*100%));
+    margin: 0 auto;
+     @include transform(translateY(-50%)); 
+}
+.flex-caption-title{
+    position: static;
+    text-align: center;
+    h3{
+        position: relative;
+        top: 120px;
+    }
+}
+.flex-control-nav{
+	bottom: 40px;
+}
+.flex-control-paging li a.flex-active{
+	background: $link-default-color;
+}

@@ -1,0 +1,50 @@
+.hl-porfolio1{
+    .masonry{
+        margin: 0 $container-mobile-padding;
+    }
+    .stamp{
+        height: $stamp-small-mobile;
+    }
+    .masonry-item{
+        width: 100%;
+        max-width: 100%;
+    }
+    .masonry-item3{
+        bottom: auto;
+    }
+    .hl-masonry-action{
+        bottom: auto;
+        right: auto;
+        min-height: 100px;
+        height: auto;
+        padding-top: 30px;
+    }
+    .hl-masonry-portfolio{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .hl-masonry-portfolio__heading{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 35px;
+        p{
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+    }
+    .hl-masonry-action__desc{
+       padding-bottom: 0; 
+    }
+    .hl-masonry-portfolio__banner{
+        width: 100%;
+        height: auto;
+    }
+    .masonry img{
+        object-position: inherit;
+    }
+    .hl-img--masonry{
+        object-fit:none;
+    }
+}

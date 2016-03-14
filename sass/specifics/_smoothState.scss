@@ -1,0 +1,79 @@
+#mainSmooth,.move-down{
+	height: 100%;
+}
+
+#mainSmooth .scene_element{
+  @include all(animation-duration, 0.5s);
+  @include all(transition-timing-function, ease-in);
+  @include all(animation-fill-mode, both); 
+}
+#mainSmooth .move-up{
+  	@include all(animation-name, move-up);
+}
+#mainSmooth .move-down{
+  	@include all(animation-name, move-down);
+
+}
+@include keyframes(move-up){
+	0%{
+		opacity: 0;
+		@include transform(translateY(-100%));
+	}
+	100%{
+		@include transform(translateY(0px));
+		opacity: 1;
+	}
+}
+@include keyframes(move-down){
+	0%{
+		opacity: 0;
+		@include transform(translateY(100%));
+	}
+	100%{
+		@include transform(translateY(0px));
+		opacity: 1;
+	}
+}
+#mainSmooth.is-exiting .move-up{
+  	@include all(animation-name, move-up-reverse);
+}
+#mainSmooth.is-exiting .move-down{
+  	@include all(animation-name, move-down-reverse);
+}
+#mainSmooth.is-exiting .hl-nav-open.move-right{
+  	@include all(animation-name, move-right);
+}
+@include keyframes(move-up-reverse){
+	0%{
+		@include transform(translateY(0));
+		opacity: 1;
+	}
+	100%{
+		@include transform(translateY(-100%));
+		opacity: 0;
+	}
+}
+@include keyframes(move-down-reverse){
+	0%{
+		@include transform(translateY(0));
+		opacity: 1;
+	}
+	100%{
+		@include transform(translateY(100%));
+		opacity: 0;
+	}
+}
+@include keyframes(move-right){
+	0%{
+		@include transform(translateX(0));
+	}
+	100%{
+		@include transform(translateX(100%));
+		opacity: 0;
+	}
+}
+
+#mainSmooth .scene_element--delayed {
+  @include all(animation-delay, .7s); }
+/*#mainSmooth.is-exiting .scene_element--delayed {
+  @include all(animation-delay, 0s); }*/

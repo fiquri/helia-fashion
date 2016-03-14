@@ -1,0 +1,44 @@
+h1, h1.hl-hero-h1{
+    font-size: $h1-mobile;
+    line-height: $h1-mobile-line-height;
+}
+h3{
+    font-size: $h3-mobile;
+    margin-bottom: 0;
+    line-height: $h3-mobile + 10px;
+}
+p{
+    font-size: $p-mobile-size-default;
+    line-height: $p-mobile-line-default;
+    margin-bottom: $p-mobile-margin-btm;
+}
+p:first-child{
+    margin-bottom: $p-mobile-margin-btm;
+}
+p.hl-label-sm{
+    letter-spacing: 0;
+    font-size: $font-mobile-size-default;
+    margin-bottom: 15px;
+}
+p.hl-paragraft-banner{
+    margin-bottom: 40px;
+}
+.hl-banner-journal p{
+    font-size: $font-mobile-size-sm;
+}
+.hl-heading-primary-journal{
+    font-size: $font-mobile-size-large;
+    line-height: $font-mobile-line-height-large;
+    position: static;
+    @include transform(translateY(0));
+}
+.hl-return a{
+    width: 50%;
+    font-size: $font-mobile-size-default!important;
+}
+.hl-post-article ul{
+    font-size: $font-mobile-size-default;
+}
+.hl-post-article ul li:before{
+    font-size: $font-mobile-size-very-sm;
+}

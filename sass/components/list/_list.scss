@@ -1,0 +1,95 @@
+ul{
+	list-style-type: none;
+}
+p+ul{
+	margin-bottom: $p-margin-btm;
+}
+#menu-menu{
+}
+.hl-li--sm{
+	p{
+		font-size: $font-size-default;
+		line-height: 22px;
+		margin-bottom: 10px;
+	}
+}
+.hl-li--social-media{
+	@include all-attribut(display, inline-flex);
+}
+.hl-li--social-media li{
+	font-size: $font-size-medium;
+	padding-right: 14px;
+}
+.hl-tag li{
+	position: relative;
+	padding-left: 52px;
+	font-size: $font-size-sm;
+	font-family: "merriweather";
+	line-height: 28px;
+	
+}
+.hl-tag--line{
+	margin-bottom: 90px;
+}
+.hl-tag--line li:before{
+	content: "";
+    border-bottom: 2px solid #cdcdcd;
+    width: 37px;
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+    left: 0px;
+}
+.hl-post-article ul{
+	font-family: "Merriweather";
+    font-size: 18px;
+    line-height: 28px;
+	li{
+		&:before{
+			content: "\f111";
+		    font-size: small;
+		    font-family: "FontAwesome";
+		    vertical-align: middle;
+		    margin-right: 20px;
+		}
+	}
+}
+.hl-post-social, .hl-post-tag{
+	li{
+		display: inline-block;
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.hl-post-social{
+	li{
+		a{
+			
+		}
+	}
+}
+.hl-post-tag li:after{
+	content: ", ";
+}
+.hl-post-tag li:last-child:after{
+	content: "";
+}
+.hl-comment-box{
+	display: flex;	
+}
+.hl-comment--left{
+	padding-right: 25px;
+
+}
+.hl-comment-list .hl-small{
+	margin-bottom: 0;
+}
+.hl-dropdown-header{
+	font-size: 12px;
+    display: block;
+    margin-left: -35px;
+    padding: 3px 0;
+    letter-spacing: .2em;
+}

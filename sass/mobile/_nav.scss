@@ -1,0 +1,13 @@
+nav{
+    width: $nav-mobile-width;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.hl-menu-icon.hl-menu-icon--move{
+    left: 0;
+    top: 0;
+    margin-left: -5px;
+    height: $logo-mobile-height;
+    background: url('../img/common/close-hover-out.png'), black;
+    background-position: -320px 50%;
+}

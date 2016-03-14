@@ -1,0 +1,19 @@
+footer{
+    padding: 40px 0;
+}
+.hl-footer-box{
+    margin: 0;
+    width: 100%;
+}
+.hl-footer__social{
+    text-align: left;
+    @include all-attribut(display, inline-flex);
+    @include all(justify-content, center);
+    @include all(flex-direction, column);
+    li{
+        margin-bottom: 5px;
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+}

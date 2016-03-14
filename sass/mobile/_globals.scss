@@ -1,0 +1,39 @@
+html{
+  font-size: 50%;
+}
+.container{
+    width: auto;
+    padding: 0 $container-mobile-padding;
+}
+.row{
+    margin: 0 $container-mobile-row;
+    position: relative;
+}
+*[class^="col"]{
+    padding: 0 $container-mobile-padding;
+}
+section, .hl-section, .hl-article{
+    margin-bottom: $margin-bottom-mobile;
+}
+.hl-flex-center{
+    @include all(flex-direction, column);
+}
+.hl-img{
+	object-position:top center;
+}
+.hl-img--responsive{
+    object-fit:inherit;
+}
+
+.e{
+	position: static;
+}
+.k{
+	position: static;
+    @include transform(translateY(0%));
+}
+.l{
+	    background: white;
+    padding: 40px;
+    margin-left: 0px;
+}

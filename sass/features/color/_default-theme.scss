@@ -1,0 +1,70 @@
+a{
+	color: #0699a4;
+	&:hover, &:focus{
+		@extend .hl-color--default;
+		@include transition(color, .3s ease-in);
+	}
+}
+.hl-color--default{
+	color: #241f22;
+}
+.hl-color--white{
+	color : #faf4f8;
+	a{
+		color: #faf4f8;
+	}
+}
+.hl-color--blue{
+	color: #0699a4;
+}
+.hl-color--gray{
+	color: #cdcdcd;
+}
+.hl-color--pink{
+	color: #faf4f8;
+}
+
+/*Short Codes*/
+.hl-input__label-content::after {
+	@extend .hl-color--blue;
+}
+.hl-input__field{
+	border-color: #f0e7ed;
+}
+.hl-background-square{
+    &:after{
+        @extend .hl-bg--blue;
+    }
+}
+#custom-pager li.cycle-pager-active a{
+    @extend .hl-bg--blue;
+}
+/*//*/
+
+.hl-bg--default{
+	background-color: #fff;
+}
+.hl-bg--transparent{
+	background-color: transparent;
+	border-color: #fff;
+}
+.hl-bg--black{
+	background-color: #241f22;
+}
+.hl-bg--pink{
+	background-color: #faf4f8;
+}
+.hl-bg--green{
+	background-color: #0699a4;
+}
+.hl-bg--blue{
+	background-color: #0699a4;
+}
+.hl-bg--gray{
+	background-color: #cdcdcd;
+}
+.hl-curve{
+    border-radius: 1000px;
+    border-width: 5px;
+    border-style: solid;
+}

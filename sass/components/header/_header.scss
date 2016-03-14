@@ -1,0 +1,51 @@
+header{
+	height: 124px;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	pointer-events: none;
+	top: 0;
+}
+.hl-logo{
+	width: 116px;
+	height: 123px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: auto;
+}
+.hl-logo__img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 100%;
+	padding: 18px;
+	@include transform(translate(-50%, -50%));
+}
+.hl-menu-icon{
+	background: url('../img/common/menu-hover-back.png');
+	position: absolute;
+	top: 34px;
+	right: 0;
+	width: 80px;
+	height: 52px;
+	background-position: -320px 50%;
+	background-repeat: no-repeat;
+	pointer-events: auto;
+	@include transition(all ease-in .3s);
+	@include all(filter, invert(0));	
+	
+	&:hover{
+		@include animation(move .3s steps(5,end) infinite alternate forwards);
+	}
+}
+	@include keyframes (move) {
+		0%{
+		background-position: -320px 50%;
+		}
+	  100%   { background-position: 80px 50%; }
+	}
+
+.hl-header-invert{
+	@include all(filter, invert(1));
+}

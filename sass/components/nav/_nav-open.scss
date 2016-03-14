@@ -1,0 +1,68 @@
+nav.hl-nav-open{
+	@include transform(translateX(0%));
+}
+
+.hl-menu-icon.hl-menu-icon--move{
+	right: $nav-width;
+	background: url('../img/common/close-hover-out.png');
+	background-position: -320px 50%;
+	@include animation(move .3s steps(5,end) infinite alternate forwards);
+
+}
+#menu-menu a{
+	font-size: $font-size-medium;
+	line-height: 40px;
+	position: relative;
+	&:hover:after {
+	    content: "";
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    width: 0px;
+	    border-bottom: 3px solid white;
+	    @include animation(hover-border .35s .2s ease-in both);
+	}
+}
+@include keyframes(hover-border){
+	100%{
+		width: 100%;
+	}
+}
+#menu-menu{
+	> li
+		> ul{
+		    padding-left: 35px;
+		    li{
+		    	a{
+		    		font-size: 18px;
+		    		position: relative;
+		    	 	text-transform: capitalize;
+		    		&:before{
+				    	content: "";
+					    border: 1px solid white;
+					    /*width: 15px;*/
+					    height: 1px;
+					    position: absolute;
+					    top: 50%;
+					    left: -31px;
+				    	@include animation(line .3s forwards .2s);
+			    	}
+		    	}
+		    }
+		    
+		}
+    
+}
+@include keyframes (line){
+	0%{width: 0}
+	100%{width: 15px}
+}
+
+
+
+.hl-isntClicked{
+	opacity: .5;
+}
+.hl-isClicked{
+	opacity: 1;
+}

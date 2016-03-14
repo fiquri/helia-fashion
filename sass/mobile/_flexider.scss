@@ -1,0 +1,19 @@
+.flex-caption__quote{
+    top: 40%;
+    padding: 0px 10px;
+}
+.flex-caption-title{
+    position: static;
+    @include transform(translateY(0%));
+    text-align: center;
+    h3{
+        position: relative;
+        top: 60px;
+    }
+}
+.flex-direction-nav{
+    display: none;
+}
+.flex-control-paging{
+    display: hidden;
+}

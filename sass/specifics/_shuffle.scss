@@ -1,0 +1,23 @@
+.hl-filter__label{
+	margin-bottom: 35px;
+}
+input.hl-filter__search{
+	padding: 15px;
+}
+.hl-filter__tags a{
+	display: block;
+	font-size: $font-size-sm;
+	&:hover,&:focus, &:active, &:visited{
+		color: $link-default-color;
+	}
+	&.active {
+		color: $text-default-color;
+	}
+
+}
+.picture-item img{
+	width: 100%;
+	height: 181px;
+	object-fit: none;
+	object-position: top left;
+}

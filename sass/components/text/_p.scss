@@ -1,0 +1,64 @@
+p{
+	font-family: "Merriweather";
+	font-size: $p-size-default;
+	line-height: $p-line-default;
+	margin-bottom: $p-margin-btm;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&:first-child{
+		margin-bottom: $p-margin-btm;
+	}
+}
+.hl-paragraft-small{
+	font-size: $p-size-small;
+}
+.hl-quote p{
+	font-style: italic;
+}
+.hl-paragraft-banner{
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.hl-paragraft-primary-journal{
+	width: 54%;
+	margin-bottom: 20px;
+}
+p.hl-who{
+	font-style: normal;
+	font-weight: 900;
+}
+.hl-small{
+	font-size: $font-size-default;
+	line-height: 24px;
+}
+.hl-quote__author {
+    font-weight: 900;
+}
+.hl-quote__author:before {
+    content: "- ";
+}
+.hl-comment p{
+	max-width: 574px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.hl-reply{
+	font-size: $font-size-sm;	
+}
+p.hl-label-sm{
+	font-size: $font-size-default;
+	letter-spacing: 0.1em;
+	margin-bottom: 20px;
+}
+p.hl-label-md{
+	font-size: $font-size-sm;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+.hl-post-article blockquote{
+	font-style: italic;
+}
+.hl-bold{
+	font-weight: 900;
+}

@@ -1,0 +1,32 @@
+nav{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: $nav-width;
+	padding: 32px 0;
+	z-index: 9999;
+	@include transform(translateX(100%));
+	@include transition(all ease-in .3s);
+}
+nav a{
+	font-family: "lato";
+}
+nav ul{
+	padding-left: 37px;
+}
+nav .hl-bg{
+	@include all(object-fit, none);
+	@include all(object-position, left);
+}
+nav ul{
+	list-style-type: none;
+	width: 180px;
+}
+
+.hl-hr--sm{
+	width: 51px;
+	margin-left: 37px;
+	margin-right: 176px;
+	border-top: 2px solid;
+}

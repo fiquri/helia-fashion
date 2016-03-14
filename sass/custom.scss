@@ -1,0 +1,36 @@
+/*
+Theme Name: Helia
+Theme URI: helia.selaksaimaji.com
+Author: Selaksa Imaji
+Author URI: selaksaimaji.com
+Description: Helia Responisve Template
+Version: 1.0
+Tags: jquery, Responsive html, Template, html, Clean html
+Text Domain: Helia
+*/
+
+
+@charset "UTF-8";
+/*-------------------------------------------------------*/
+	/* Table of Contents	 */
+/*-------------------------------------------------------*/
+
+/*
+1.	Base styles 
+2.	Component
+3.	Wrap / Container
+4.	Preloader
+5.	Header
+6.	Home  start
+7.	Features
+8.	Portfolio Start
+9.	Contact  start
+10.	Short codes
+ 
+*/
+
+@import 'base/__base';
+
+@import 'components/__components';
+
+@import 'specifics/__specifics';

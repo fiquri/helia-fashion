@@ -1,0 +1,36 @@
+.hl-img--top-left, .hl-img--left-top,
+.hl-img--top-right,.hl-img--right-top,
+.hl-img--btm-left, .hl-img--left-btm,
+.hl-img--btm-right, .hl-img--right-btm,
+.hl-img--center-left, .hl-img--left-center,
+.hl-img--center-right, .hl-img--right-center,
+.hl-img--center-top, .hl-img--top-center,
+.hl-img--center-btm, .hl-img--btm-center, .hl-img{
+	object-fit:none;
+}
+.hl-img--top-left, .hl-img--left-top{
+	object-position: top left;
+}
+.hl-img--top-right,.hl-img--right-top{
+	object-position: top right;
+}
+.hl-img--btm-left, .hl-img--left-btm{
+	object-position: bottom left;
+}
+.hl-img--btm-right, .hl-img--right-btm{
+	object-position: bottom right;
+}
+.hl-img--center-left, .hl-img--left-center{
+	object-position: center left;
+}
+.hl-img--center-right, .hl-img--right-center{
+	object-position: center right;
+}
+.hl-img--center-top, .hl-img--top-center,.hl-img{
+	object-position: center top;
+}
+.hl-img--center-btm, .hl-img--btm-center{
+	object-position: center bottom;
+}
+
+

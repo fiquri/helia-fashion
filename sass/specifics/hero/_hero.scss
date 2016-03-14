@@ -1,0 +1,17 @@
+.hl-hero{
+	width: 100%;
+	height: 100%;
+}
+.hl-hero__wrapper, .hl-separator__wrapper{
+	padding-bottom: 100px;
+	height: 100%;
+	@include all-attribut(display, flex);
+    @include all(align-items, flex-start);
+    @include all(flex-direction, column);
+    @include all(justify-content, flex-end);
+}
+.hl-hero__content, .hl-separator__content{
+	p{
+		width: calc(5/8*100%);
+	}
+}

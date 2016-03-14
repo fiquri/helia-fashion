@@ -1,0 +1,23 @@
+header{
+    height: $header-mobile-height;
+}
+.hl-logo{
+    width: $logo-mobile-width;
+    height: $logo-mobile-height;
+}
+.hl-wr-logo{
+    width: $logo-mobile-wrapper ;
+    height: $logo-mobile-wrapper ;
+}
+.hl-wr-logo__img{
+    max-width: $logo-mobile-width - 3px;
+}
+.hl-logo__img{
+    padding: 10px;
+}
+.hl-menu-icon{
+    left: $icon-mobile-left;
+}
+.hl-menu-icon{
+    top: $icon-mobile-top;
+}
